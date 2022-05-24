@@ -1,0 +1,736 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* --------- Stylizacja navbara --------- */
+
+.modal-date {
+    position: absolute;
+    top: 37px;
+    right: 40px;
+    width: 200px;
+    background: white;
+    z-index: 2000;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+    transition: 0.7s;
+}
+.upperNavbar {
+    font-size: 1.8rem;
+    background: rgb(219, 219, 219);
+    padding: 5px 5px 5px 45px;
+}
+
+.upperNavbar > a {
+    margin: 5px;
+    color: rgb(51, 51, 51);
+}
+.upperNavbar > .right {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.upperNavbar > .right > div {
+    display: inline;
+}
+
+.navbar {
+    position: absolute;
+    border-bottom: rgb(30, 30, 30) 1px solid;
+    padding: 20px 0px 20px 0px;
+    height: auto;
+    font-size: 1.15rem;
+    z-index: 1000;
+    text-transform: uppercase;
+    width: 100%;
+    background: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar > button {
+    background: none;
+    border: none;
+    display: none;
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    float: left;
+}
+
+.navbar > .menu {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.navbar > .shop > li, .navbar > .menu > li {
+    list-style-type: none;
+    display: block;
+    margin: 10px;
+}
+.navbar > .menu > li {
+    float: left;
+}
+.navbar > .shop > li {
+    float: right;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    transition: color .4s;
+}
+li > a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.koszyk:hover  {
+    color: rgb(211, 0, 0);
+    cursor: pointer;
+}
+
+.koszyk {
+    background: rgb(180, 0, 0);
+    border-radius: 5px;
+    padding: 7px 17px 7px 17px;
+    border: 1px rgb(211, 0, 0) solid;
+    color: white;
+}
+
+/* ----------------- navigation ------------------------ */
+
+.navigation {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    display: block;
+    border: 1px rgb(51, 51, 51) solid;
+    padding: -20px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.navigation > .container {
+    font-size: 1.2rem;
+    color: rgb(125, 125, 125);
+}
+.navigation > .container > a {
+    text-decoration: none;
+    color: white;
+}
+.navigation > .container > a:hover {
+    color: rgb(80, 80, 80);
+}
+
+
+
+
+/* ----- Slider na stronie wraz z jumbotron ----- */
+
+.mini-jumbotron {
+    background: url("https://www.broilking.pl/files/blog/129/broil-king-pizza-z-grilla-d-b88c2458.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.textJumbo > p {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.textJumbo {
+    position: relative;
+    width: auto;
+    height: 300px;
+    top: 50%;
+    background: linear-gradient(to top, black, 70%, transparent);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 100px 20px 20px 20px;
+    animation: 5s textJumbo infinite;
+}
+
+.slider {
+    overflow: hidden;
+    height: 800px;
+}
+.slider > figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider > figure > div {
+    width: 20%;
+    float: left;
+    height: 800px;
+    background-size: cover;
+}
+.bg1 {
+    background: url("./images/bg1.jpg");
+}
+.bg2 {
+    background: url("./images/bg2.jpg");
+}
+.bg3 {
+    background: url("./images/bg3.jpg");
+}
+.bg4 {
+    background: url("./images/bg4.jpg");
+}
+
+@keyframes textJumbo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+/* Pod spodem */
+
+.line {
+    background: linear-gradient(to bottom, rgb(110, 20, 20), rgb(200, 20, 20));
+    width: auto;
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+.ball {
+    display: block;
+    margin: 1.4%;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    transition: .4s;
+}
+
+.ball > p {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1000px;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content > .down {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+.offerts > li {
+    padding: 15px;
+    border-bottom: 1px black solid;
+    list-style-type: none;
+    display: flex;
+}
+.info > div {
+    font-size: 1.2rem;
+}
+.offert > .info {
+    font-size: 1.4rem;
+    width: 100%;
+    display: block;
+}
+.offert > .cost {
+    font-size: 1.3rem;
+    margin: 10px;
+    width: 100%;
+    display: block;
+}
+
+.small, .medium, .big {
+    display: inline-table;
+    margin-left: 15px;
+}
+.todo:hover {
+    cursor: pointer;
+}
+.todo {
+    background: rgb(180, 0, 0);
+    border-radius: 5px;
+    margin: 5px 0px 0px 15px;
+    padding: 7px 17px 7px 17px;
+    border: 1px rgb(211, 0, 0) solid;
+    color: white;
+}
+footer {
+    margin-top: 1%;
+}
+.foother-top {
+    background: rgb(51, 51, 51);
+    width: auto;
+    color: white;
+    padding: 10px;
+    -webkit-box-shadow: 0px -4px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 10px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 10px -2px rgba(0,0,0,0.75);
+}
+
+.foother-top > .left {
+    margin-left: 5%;
+    display: inline-table;
+    max-width: 600px;
+}
+
+.foother-bottom {
+    background: rgb(30, 30, 30);
+    width: auto;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 30px;
+}
+
+.foother-bottom > a {
+    color: white;
+}
+
+.left > .bottom {
+    font-size: 2.6rem;
+}
+
+.left > a {
+    display: list-item;
+    color: white;
+    margin: 2px;
+}
+
+.left > p {
+    font-size: 1.4rem;
+}
+
+.bottom > a:hover {
+    color: rgb(80, 80, 80);
+}
+
+.bottom > a {
+    color: white;
+}
+
+/* -------------- offerts --------------------- */
+.disable:hover {
+    cursor:not-allowed;
+}
+.disable:focus {
+    outline: none;
+}
+.disable {
+    opacity: 0.8;
+}
+.offerts-safe {
+    background:rgb(51, 51, 51,0.8);
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.offerts-safe > li {
+    list-style-type: none;
+    display: inline-table;
+    margin: 15px 25px 15px 25px;
+}
+.offerts-safe > li > a {
+    color: white;
+}
+.offerts-safe > li > a:hover {
+    color: rgb(80, 80, 80);
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    background-image: linear-gradient(to top, rgb(0,0,0,0.9),rgb(80,80,80,0.8));
+    transition: 0.4s;
+}
+.modalOffert > .container > p {
+    font-size: 1.4rem;
+}
+.modalOffert {
+    position: fixed;
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+.modalOffert > .title {
+    background: rgb(180, 0, 0);
+    width: auto;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.modalOffert > .title > button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    float: right;
+}
+.modalOffert > button {
+    background: rgb(180, 0, 0);
+    border: 1px rgb(110, 20, 20) solid;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    margin: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.modalOffert > .container > button:hover {
+    cursor: pointer;
+}
+.modalOffert > .container > button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border:1px rgb(51, 51, 51) solid;
+}
+.modalOffert > .container > input[type="text"] {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    padding: 0px;
+    margin: -1px 1px 1px 1px;
+    text-align: center;
+}
+/* ------------------- container in main ------------ */
+
+.content {
+    clear: both;
+    width: auto;
+    padding: 10px;
+    display: flex;
+}
+
+hr {
+    border: 0.5px solid;
+    border-image-source: linear-gradient(to right, transparent, black, transparent);
+    border-image-slice: 1;
+    margin: 50px;
+}
+
+.content > .col {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+}
+.col-3 { 
+    max-width: 27%;
+    border-left: 1px black solid;
+    margin: 10px;
+}
+.col > img {
+    transition: 0.6s;
+    height: auto;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.col > .right {
+    transform: translate(80px);
+    opacity: 0;
+}
+
+.col > .left {
+    transform: translate(-80px);
+    opacity: 0;
+}
+
+/* -------------------------- galery ----------- */
+
+.galeryRight:hover {
+    cursor: pointer;
+    transform: scale(1.25) rotate(-4deg);
+    transition: .4s;
+}
+.galeryLeft:hover {
+    cursor: pointer;
+    transform: scale(1.25) rotate(4deg);
+    transition: .4s;
+}
+.modalGalery {
+    position: fixed;
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    background-repeat: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;    
+}
+.close:hover {
+    cursor: pointer
+}
+.close:focus {
+    outline: none;
+    color:rgb(51, 51, 51);
+}
+.close {
+    float: right;
+    margin: 20px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 3rem;
+}
+
+.chat {
+    transition: 0.3s;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    background: rgb(219, 219, 219);
+    height: 370px;
+    width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.75);
+}
+.chat > p {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.chatbox {
+    overflow: auto;
+    height: 267px;
+    background: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.chat > input {
+    width: 80%;
+    margin: 4px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px rgb(80, 80, 80) solid;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.chat > input:focus {
+    outline: none;
+    border: 2px rgb(0, 132, 172) solid;
+}
+.chat > button:focus,.chat > button:hover {
+    color:rgb(80, 80, 80);
+} 
+.chat > button {
+    cursor: pointer;
+    margin: 4px;
+    font-size: 19px;
+    color: rgb(0, 132, 172);   
+    border: none;
+    width: auto;
+    background: none;
+}
+.message {
+    border-radius: 20px;
+    color: white;
+    width:fit-content;
+    padding: 7px 10px 7px 10px;
+    font-size: 1rem;    
+}
+
+.you {
+    margin: 5px 40% 5px 5px;
+    background:rgb(125, 125, 125);
+    float: left;
+}
+.me {
+    background:rgb(0, 132, 172);
+    float: right;
+    margin: 5px 5px 5px 40%;
+}
+
+
+/* ---------------- Respozywnosc -------------  */
+
+
+@media screen and (max-width: 678px) {
+    .content {
+        flex-direction: column;
+    }
+    .navbar > .menu {
+        text-align: center;
+    }
+    .navbar > .menu > li {
+        width: 100%;
+    }
+    .upperNavbar {
+        display: none;
+    }
+    .navbar > .menu{
+        display: none;
+    }
+    .navbar > button {
+        display: block;
+        margin: 15px;
+    }
+    .offerts > li {
+        flex-direction: column;
+    }
+    .todo {
+        display: block;
+        font-size: 1.1rem;
+        margin: 20px auto 0px auto;
+    }
+    .col-3 { 
+        max-width: 100%;
+        border-left: none;
+        margin: 10px;
+    }
+}
+ 
+/* -------------- basket ---------------------------------- */
+.labelBasket {
+    margin: 10px;
+}
+.labelBasket > input {
+    border: none;
+    padding: 5px;
+    background: none;
+    font-size: 1.1rem;
+    border-bottom:2px rgb(51, 51, 51) solid;
+    transition: border-bottom 0.6s;
+    margin-left: 10px;
+}
+.labelBasket > input:focus {
+    outline: none;
+    border-bottom:2px rgb(0, 132, 172) solid;
+}
+.trash {
+    font-size: 30px;
+    margin-top: -10px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.error {
+    color:rgb(180, 0, 0);
+}
+
+#ticket {
+    text-transform: uppercase;
+    margin-top: 20px;
+    background: white;
+    border: 2px black solid;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 180px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+#ticket:focus {
+    outline: none;
+    border: 2px rgb(200, 20, 20) solid;
+}
+.cupon > button{
+    border: 1px rgb(110, 20, 20) solid;
+    background: rgb(180, 0, 0);
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+}
+.cupon > button:hover {
+    cursor: pointer;
+}
+.cupon > button:focus {
+    outline: none;
+    background: rgb(80, 80, 80);
+}

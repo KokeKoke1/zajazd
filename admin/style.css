@@ -1,0 +1,106 @@
+body {
+    background: #292929;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    flex: 4;
+}
+.orderlist {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    color: black;
+}
+.ordercreate {
+    padding: 20px;
+    background: white;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px black dashed;
+}
+.orderlist > .title, .ordercreate> .title {
+    font-weight: bold;
+    margin: 10px;
+}
+.btn-done {
+    border: none;
+    color: green;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.btn-trash {
+    border: none;
+    color: rgb(189, 25, 25);
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.btn-edit {
+    color: rgb(25, 142, 189);
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+}
+li {
+    border-bottom: 3px gray solid;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    margin-top: 30px;
+}
+.li:first-of-type {
+    border: none; 
+}
+.li {
+    list-style-type:circle;
+    border: none; 
+    margin: 0px;
+}
+.order {
+    cursor: pointer;
+}
+.orderLi {
+    display: none;
+}
+
+#offertslist {
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    font-size: 1.2rem;
+}
+#offertcreate {
+    cursor: pointer;
+    background: rgb(155, 14, 14);
+    border: 2px solid black;
+    font-size: 1.1rem;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    margin: 30px;
+    border-radius: 5px;
+    transition: background .2s;
+}
+#offertcreate:hover {
+    background: rgb(161, 75, 75);
+    color: black;
+}
+.inputgroup > .inputitem > input {
+    border: 2px black solid;
+}
+.inputitem {
+    margin: 5px;
+}
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
